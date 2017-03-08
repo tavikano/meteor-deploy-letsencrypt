@@ -1,0 +1,59 @@
+{
+    "rules": {
+        "indent": [
+            2,
+            2
+        ],
+        "quotes": [
+            2,
+            "single"
+        ],
+        "linebreak-style": [
+            2,
+            "unix"
+        ],
+        "semi": [
+            2,
+            "always"
+        ]
+    },
+    "env": {
+        "es6": true,
+        "node": true,
+        "browser": true,
+        "meteor": true,
+    },
+    "extends": "eslint:recommended",
+    "globals": {
+        "Template": false,
+        "Meteor": false,
+        "_": false,
+        "check": false,
+        "$": false,
+        "ReactiveVar": false,
+        "BlazeLayout": false,
+        "Mongo": false,
+        "Email": false,
+        "Assets": false,
+
+        "toastr": false,
+        "FlowRouter": false,
+        "SearchSource": false,
+        "sitemaps": false,
+        "grecaptcha": false,
+        "reCAPTCHA": false,
+        "getSlug": false,
+        "SSR": false,
+        "Picker": false,
+        "Comments": false,
+        "Modal": false,
+        "Slingshot": false,
+        "Counts": false,
+
+        "Utils": false,
+        "Products": false,
+        "Notifications": false,
+        "Users": false,
+        "ProductDonations": false
+    }
+}

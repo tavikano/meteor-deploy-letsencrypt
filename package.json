@@ -1,0 +1,28 @@
+{
+  "name": "getdrizzle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@vimeo/player": "^1.0.6",
+    "babel-runtime": "^6.18.0",
+    "bcrypt": "^0.8.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-s3": "^0.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tima101/getdrizzle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tima101/getdrizzle/issues"
+  },
+  "homepage": "https://github.com/tima101/getdrizzle#readme"
+}

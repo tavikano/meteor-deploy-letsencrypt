@@ -1,0 +1,36 @@
+<template name="app">
+    {{> header}}
+
+    <div class="container100" id="container">
+        {{> Template.dynamic template=area}}
+    </div>
+
+    {{> footer}}
+
+    <div class="scroll-top-wrapper">
+        <span class="scroll-top-inner">
+            <i class="fa fa-chevron-up fa-1x"></i>
+        </span>
+    </div>
+
+    <script>
+        if (typeof $ !== "undefined") {
+            $(function () {
+                var message = "Paywall and Adblock detector";
+                var original;
+
+                $(window).focus(function() {
+                    if(original) {
+                        document.title = original;
+                    }
+                }).blur(function() {
+                    var title = $('title').text();
+                    if(title != message) {
+                        original = title;
+                    }
+                    document.title = message;
+                });
+            });
+        }
+    </script>
+</template>
