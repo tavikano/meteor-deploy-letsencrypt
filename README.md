@@ -13,11 +13,14 @@ https://github.com/tima101/Weather-deploy-tutorial
 Log in by using: `ssh root@xxx.xxx.xxx.xxx`. Set new password, use 16+ characters.
 
 -Install Letsencrypt:
-`apt-get install git
 
-git clone https://github.com/letsencrypt/letsencrypt
+`apt-get install git`
 
-cd letsencrypt`
+`git clone https://github.com/letsencrypt/letsencrypt`
+
+`cd letsencrypt`
+
+
 
 #Expired certificate
 
