@@ -5,6 +5,10 @@ One of my tutorials about Letsencrypt was read over 1,500 times and received man
 If you are looking for tutorial on how to deploy Node app from Github to AWS Elastic Beanstalk, check up this repository:
 https://github.com/tima101/Weather-deploy-tutorial
 
+If you are building Adblock Detector, check this repo: https://github.com/tima101/Native-adblock-detector
+
+If you are building Paywall/Membership software, stay tuned, I am in the process of open-sourcing.
+
 #Setting up Letsencrypt on your droplet
 
 Create Ubuntu droplet (latest version) on Digital Ocean.
