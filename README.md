@@ -9,21 +9,38 @@ https://github.com/tima101/Weather-deploy-tutorial
 
 >Create Ubuntu droplet (latest version) on Digital Ocean.
 
--Log in into your server via terminal. Digital Ocean will email you a temporary password.
+>Log in into your server via terminal. Digital Ocean will email you a temporary password.
 Log in by using: `ssh root@xxx.xxx.xxx.xxx`. Set new password, use 16+ characters.
 
--Install Letsencrypt:
+>Install Letsencrypt
 
 `apt-get install git`
 
 `git clone https://github.com/letsencrypt/letsencrypt`
 
+>Go to letsencrypt folder and issue certificate
+
 `cd letsencrypt`
 
+`./letsencrypt-auto certonly --standalone --email xxx@yourdomain.com -d yourdomain.com`
 
+**Make sure that your domain has an A record pointing to the right IP address.**
+
+>Get your fullchain.pem and privkey.pem files. You will need them when you deploy your app with mupx tool. Go to etc/letsencrypt/live/yourdomain.com folder, download (I use Filezilla) fullchain.pem and privkey.pem, place them into your app folder, add their names to .gitignore file.
 
 #Expired certificate
 
+>When certificate expires, you will get email from Letencrypt Expiry bot. Go to terminal and stop your app:
+
+`mupx stop`
+
+Then log in into server, go to letsencrypt folder and re-issue certificate:
+
+`cd letsencrypt`
+
+`./letsencrypt-auto renew --agree-tos`
+
+Again, go to etc/letsencrypt/live/yourdomain.com folder, download your new fullchain.pem and privkey.pem, place them into your app folder (replace old ones).
 
 
 
