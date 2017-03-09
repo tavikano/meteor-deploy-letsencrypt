@@ -47,6 +47,7 @@ Again, go to etc/letsencrypt/live/yourdomain.com folder, download your new fullc
 Go to your app folder, install mupx tool and fill out mup.json file:
 
 `npm install -g mupx`
+
 `mupx init`
 
 mup.json file for this web app looks like this:
@@ -123,6 +124,7 @@ Edit start.sh file in 3 places, replace "meteorhacks" with "abernix". Save. Run 
 
 Done. App is deployed. Congrats.
 
+#Scaling
 
 To add extra balancers, change droplet's size. Say from 1 to 4 CPUs.
 
