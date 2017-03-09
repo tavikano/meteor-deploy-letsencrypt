@@ -7,7 +7,7 @@ https://github.com/tima101/Weather-deploy-tutorial
 
 #Setting up Letsencrypt on your droplet
 
--Create Ubuntu droplet (latest version) on Digital Ocean.
+>Create Ubuntu droplet (latest version) on Digital Ocean.
 
 -Log in into your server via terminal. Digital Ocean will email you a temporary password.
 Log in by using: `ssh root@xxx.xxx.xxx.xxx`. Set new password, use 16+ characters.
